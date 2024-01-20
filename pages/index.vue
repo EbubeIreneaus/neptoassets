@@ -31,7 +31,7 @@ AOS.refreshHard()
                 <i class="fa fa-user fa-2xl text-orange-700"></i>
                 <div>
                     <h2 class="text-2xl font-semibold">Explore With Us</h2>
-                    <p>First you need to become a member of Digital Assets by registering.</p>
+                    <p>First you need to become a member of Nepto Assets by registering.</p>
                 </div>
             </div>
 

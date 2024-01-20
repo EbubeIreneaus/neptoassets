@@ -66,11 +66,11 @@
         <div class="text-center max-w-3xl p-10 mx-auto absolute -mt-20 bg-slate-200" data-aos="fade-up">
             <p class="text-xl font-semibold text-orange-600">overview</p>
             <h2 class="text-4xl font-bold my-5 text-orange-600">7 Years of experience</h2>
-            <p class="text-left px-3 sm:px-px">Digital Assets operates as an international digital investment management platform. Our Company offers access
+            <p class="text-left px-3 sm:px-px">Nepto Assets operates as an international digital investment management platform. Our Company offers access
                 to multiple, automated, algorithm driven financial services, investment solutions, diversified alternative
                 investments, portfolio management, financial planning, and advisory services.
                 <br>
-                Digital Assets began as an early investor in today’s most recognizable alternative investment funds, creating
+                Nepto Assets began as an early investor in today’s most recognizable alternative investment funds, creating
                 and managing several investment funds catering to offshore high net worth investors. Sovereign pioneered the
                 distinctive vision to create an institutional solution to not only navigate, but also facilitate and
                 simplify, the alternative investment journey.</p>

@@ -74,7 +74,7 @@ onMounted(() => {
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap text-left lg:text-left">
                     <div class="w-full lg:w-4/12 px-4 mb-5">
-                        <h4 class="text-3xl fonat-semibold  my-1">Digital Assets</h4>
+                        <h4 class="text-3xl fonat-semibold  my-1">Nepto Assets</h4>
                         <h5 class="text-sm mt-2 mb-4 text-blueGray-600 ">
                             We utilize our experience and deep network to provide exposure to various
                             direct and third-party institutional investment market opportunities for our
@@ -146,7 +146,7 @@ onMounted(() => {
                     <div class="w-full md:w-4/12 px-4 mx-auto text-center">
                         <div class="text-sm text-blueGray-500 font-semibold py-1">
                             Copyright © <span id="get-current-year">2016 - {{ year }}</span><a href="#"
-                                class="text-blueGray-500 hover:text-gray-800" target="_blank"> Digital Assets</a>
+                                class="text-blueGray-500 hover:text-gray-800" target="_blank"> Nepto Assets</a>
                         </div>
                     </div>
                 </div>

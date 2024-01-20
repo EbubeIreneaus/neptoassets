@@ -28,10 +28,10 @@ AOS.refreshHard()
                 <div class="" data-aos="fade-left">
                     <h2 data-aos="fade-up"
                         class=" text-orange-600 text-4xl font-extrabold mb-5 tracking-wider relative py-5 before:absolute before:border before:w-24 before:bottom-0 before:border-primary-hover text-center">
-                        Welcome to Digital Assets
+                        Welcome to Nepto Assets
                     </h2>
                     <p data-aos="fade-up">
-                        At Digital Assets, we are committed to helping you navigate the world of cryptocurrency
+                        At Nepto Assets, we are committed to helping you navigate the world of cryptocurrency
                         investments with confidence and ease. Our platform is designed to provide you with a secure and
                         efficient way to grow your wealth through strategic digital asset management.
                     </p>
@@ -39,7 +39,7 @@ AOS.refreshHard()
                         Who We Are
                     </h2>
                     <p data-aos="fade-up">
-                        Digital Assets was founded by a team of experienced financial experts and tech enthusiasts who
+                        Nepto Assets was founded by a team of experienced financial experts and tech enthusiasts who
                         recognized the immense potential of cryptocurrencies in shaping the future of global finance. With
                         our in-depth knowledge of blockchain technology and investment strategies, we aim to empower
                         individuals
