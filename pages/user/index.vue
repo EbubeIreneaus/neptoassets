@@ -181,26 +181,26 @@ onMounted(() => {
                     <input type="text"
                         :value="`https://digitalassetsgrowth.com/auth/register/${account.profile.user.username}`"
                         class="outline-none border py-3 w-full ps-3 bg-slate-200">
-                    <a :href="'https://www.shareaholic.com/api/share/?v=1&amp;apitype=1&amp;apikey=833959d5dc1e891b01eaf8c799cc1602&amp;service=copy_link&amp;title=DigitalAssets&amp;link=https://digitalassetsgrowth.com/auth/register/' + account.profile.user.username"
+                    <a :href="'https://www.shareaholic.com/api/share/?v=1&amp;apitype=1&amp;apikey=833959d5dc1e891b01eaf8c799cc1602&amp;service=copy_link&amp;title=Nepto Assets&amp;link=https://digitalassetsgrowth.com/auth/register/' + account.profile.user.username"
                         target="_blank" class="py-3 border px-5 bg-black/90 text-white hover:bg-black/60">
                         <i class="fa fa-copy "></i>
                     </a>
                 </div>
                 <p>
 
-                    <a :href="'https://www.shareaholic.com/api/share/?v=1&amp;apitype=1&amp;apikey=833959d5dc1e891b01eaf8c799cc1602&amp;service=facebook&amp;title=DigitalAssets&amp;link=https://digitalassetsgrowth.com/auth/register/' + account.profile.user.username"
+                    <a :href="'https://www.shareaholic.com/api/share/?v=1&amp;apitype=1&amp;apikey=833959d5dc1e891b01eaf8c799cc1602&amp;service=facebook&amp;title=Nepto Assets&amp;link=https://digitalassetsgrowth.com/auth/register/' + account.profile.user.username"
                         target="_blank">
                         <i class="fa-brands fa-facebook material-icon m-1  w3-border w3-round-large  w3-hover-blue p-1"></i>
                     </a>
-                    <a :href="'https://www.shareaholic.com/api/share/?v=1&amp;apitype=1&amp;apikey=833959d5dc1e891b01eaf8c799cc1602&amp;service=whatsapp&amp;title=DigitalAssets&amp;link=https://digitalassetsgrowth.com/auth/register/' + account.profile.user.username"
+                    <a :href="'https://www.shareaholic.com/api/share/?v=1&amp;apitype=1&amp;apikey=833959d5dc1e891b01eaf8c799cc1602&amp;service=whatsapp&amp;title=Nepto Assets&amp;link=https://digitalassetsgrowth.com/auth/register/' + account.profile.user.username"
                         target="_blank">
                         <i class="fa-brands fa-whatsapp material-icon m-1 w3-border w3-round-large  w3-hover-blue p-1"></i>
                     </a>
-                    <a :href="'https://www.shareaholic.com/api/share/?v=1&amp;apitype=1&amp;apikey=833959d5dc1e891b01eaf8c799cc1602&amp;service=telegram&amp;title=DigitalAssets&amp;link=https://digitalassetsgrowth.com/auth/register/' + account.profile.user.username"
+                    <a :href="'https://www.shareaholic.com/api/share/?v=1&amp;apitype=1&amp;apikey=833959d5dc1e891b01eaf8c799cc1602&amp;service=telegram&amp;title=Nepto Assets&amp;link=https://digitalassetsgrowth.com/auth/register/' + account.profile.user.username"
                         target="_blank">
                         <i class="fa-brands fa-telegram m-1 material-icon w3-border w3-round-large w3-hover-blue p-1"></i>
                     </a>
-                    <a :href="'https://www.shareaholic.com/api/share/?v=1&amp;apitype=1&amp;apikey=833959d5dc1e891b01eaf8c799cc1602&amp;service=twitter&amp;title=DigitalAssets&amp;link=https://digitalassetsgrowth.com/auth/register/' + account.profile.user.username"
+                    <a :href="'https://www.shareaholic.com/api/share/?v=1&amp;apitype=1&amp;apikey=833959d5dc1e891b01eaf8c799cc1602&amp;service=twitter&amp;title=Nepto Assets&amp;link=https://digitalassetsgrowth.com/auth/register/' + account.profile.user.username"
                         target="_blank">
                         <i class="fa-brands fa-twitter material-icon m-1 w3-border w3-round-large w3-hover-blue p-1"></i>
                     </a>
