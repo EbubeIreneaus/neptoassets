@@ -29,161 +29,167 @@ const send_feedback = async (e) => {
 }
 
 onMounted(() => {
-AOS.refreshHard()
+    AOS.refreshHard()
 })
 </script>
 <template>
     <div>
         <div class="w-screen h-screen  relative border">
-        <div class="absolute top-0 left-0 w-full h-full bg-black/50"></div>
-        <video src="~/assets/media/contact-bg.mp4" autoplay loop class="h-full w-full object-cover">
-        </video>
-        <div class="flex justify-center absolute z-30 bottom-[30%] w-full left-0 ">
-            <div
-                class=" text-center max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-3xl w-full
+            <div class="absolute top-0 left-0 w-full h-full bg-black/50"></div>
+            <video src="~/assets/media/contact-bg.mp4" autoplay loop class="h-full w-full object-cover">
+            </video>
+            <div class="flex justify-center absolute z-30 bottom-[30%] w-full left-0 ">
+                <div class=" text-center max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-3xl w-full
                  mx-3  bg-black/50 px-5 py-12 animate__animated animate__slideInUp text-white/70">
-                <h1 class="text-5xl font-bold my-3">Contact Us</h1>
-                <p class="text-xl font-semibold ">Do you have any queries or suggestions? Please contact us about all
-                    enquiries including membership and volunteer work using the form below.</p>
+                    <h1 class="text-5xl font-bold my-3">Contact Us</h1>
+                    <p class="text-xl font-semibold ">Do you have any queries or suggestions? Please contact us about all
+                        enquiries including membership and volunteer work using the form below.</p>
+                </div>
             </div>
+
         </div>
 
-    </div>
 
+        <!-- </div> -->
 
-    <!-- </div> -->
+        <div class="flex justify-center xl:px-20 lg:px-14 md:px-10 sm:px-8 px-5">
 
-    <div class="flex justify-center xl:px-20 lg:px-14 md:px-10 sm:px-8 px-5">
+            <div class=" py-2 w-full">
 
-        <div class=" py-2 w-full">
+                <div class="contact_info -mt-10">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1" data-aos="fade-right">
+                                <div class=" !flex lg:!flex-row !flex-col justify-between align-center">
 
-            <div class="contact_info -mt-10">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 offset-lg-1" data-aos="fade-right">
-                            <div class=" !flex lg:!flex-row !flex-col justify-between align-center">
-
-                                <!-- Contact Item -->
-                                <div class="contact_info_item !flex flex-row items-center justify-start">
-                                    <div class="contact_info_image"><img
-                                            src="https://img.icons8.com/office/24/000000/iphone.png" alt=""></div>
-                                    <div class="contact_info_content">
-                                        <div class="contact_info_title">Whatsapp</div>
-                                        <div class="contact_info_text">+1 (859) 638‑4766</div>
+                                    <!-- Contact Item -->
+                                    <div class="contact_info_item !flex flex-row items-center justify-start">
+                                        <div class="contact_info_image"><img
+                                                src="https://img.icons8.com/office/24/000000/iphone.png" alt=""></div>
+                                        <div class="contact_info_content">
+                                            <div class="contact_info_title">Whatsapp</div>
+                                            <div class="contact_info_text">+1 (859) 638‑4766</div>
+                                        </div>
                                     </div>
+
+                                    <!-- Contact Item -->
+                                    <div class="contact_info_item !flex flex-row items-center justify-start"
+                                        data-aos="fade-up">
+                                        <div class="contact_info_image"><img
+                                                src="https://img.icons8.com/ultraviolet/24/000000/filled-message.png"
+                                                alt="">
+                                        </div>
+                                        <div class="contact_info_content">
+                                            <div class="contact_info_title text-orange-600">Email</div>
+                                            <div class="contact_info_text ">
+                                                <a href="mailto:service@digitalassets.com.ng">service@neptoasset.com.ng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Contact Item -->
+                                    <div class="contact_info_item !flex flex-row items-center justify-start"
+                                        data-aos="fade-left">
+                                        <div class="contact_info_image"><img
+                                                src="https://img.icons8.com/ultraviolet/24/000000/map-marker.png" alt="">
+                                        </div>
+                                        <div class="contact_info_content">
+                                            <div class="contact_info_title text-orange-600">Address</div>
+                                            <div class="contact_info_text">Beverly Blvd, Los Angeles, CA
+                                                90048, United States</div>
+                                        </div>
+                                    </div>
+
                                 </div>
-
-                                <!-- Contact Item -->
-                                <div class="contact_info_item !flex flex-row items-center justify-start" data-aos="fade-up">
-                                    <div class="contact_info_image"><img
-                                            src="https://img.icons8.com/ultraviolet/24/000000/filled-message.png" alt="">
-                                    </div>
-                                    <div class="contact_info_content">
-                                        <div class="contact_info_title text-orange-600">Email</div>
-                                        <div class="contact_info_text ">
-                                        <a href="mailto:service@digitalassets.com.ng">service@neptoasset.com.ng</a></div>
-                                    </div>
-                                </div>
-
-                                <!-- Contact Item -->
-                                <div class="contact_info_item !flex flex-row items-center justify-start" data-aos="fade-left">
-                                    <div class="contact_info_image"><img
-                                            src="https://img.icons8.com/ultraviolet/24/000000/map-marker.png" alt=""></div>
-                                    <div class="contact_info_content">
-                                        <div class="contact_info_title text-orange-600">Address</div>
-                                        <div class="contact_info_text">4th St, Downey, CA 90241, UK</div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Contact Form -->
+                <!-- Contact Form -->
 
-            <div class="contact_form" ng-controller="contactform" data-aos="fade-up">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 offset-lg-1">
-                            <div class="contact_form_container">
-                                <div class="contact_form_title text-orange-600">Get in Touch</div>
+                <div class="contact_form" ng-controller="contactform" data-aos="fade-up">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="contact_form_container">
+                                    <div class="contact_form_title text-orange-600">Get in Touch</div>
 
-                                <form id="contact_form" @submit.prevent="send_feedback($event)">
-                                    <div
-                                        class="contact_form_inputs !flex lg:!flex-row !flex-col justify-between lg:gap-2 gap-4">
-                                        <div class="!w-full">
-                                            <label for="" class="block">First Name</label>
-                                            <input type="text" id="" placeholder="First Name"
-                                                class="contact_form_name input_field !w-full bg-transparent !border-0  ring-1 ring-primary-hover"
-                                                v-model="form.first_name" required="required"
-                                                data-error="Name is required.">
+                                    <form id="contact_form" @submit.prevent="send_feedback($event)">
+                                        <div
+                                            class="contact_form_inputs !flex lg:!flex-row !flex-col justify-between lg:gap-2 gap-4">
+                                            <div class="!w-full">
+                                                <label for="" class="block">First Name</label>
+                                                <input type="text" id="" placeholder="First Name"
+                                                    class="contact_form_name input_field !w-full bg-transparent !border-0  ring-1 ring-primary-hover"
+                                                    v-model="form.first_name" required="required"
+                                                    data-error="Name is required.">
+                                            </div>
+
+                                            <div class="!w-full">
+                                                <label for="" class="block">Last Name</label>
+                                                <input type="email" id="" placeholder="Last Name"
+                                                    class="contact_form_email input_field !w-full bg-transparent ring-1 ring-primary-hover"
+                                                    v-model="form.last_name" required="required"
+                                                    data-error="Email is required.">
+                                            </div>
+
+                                            <div class="!w-full">
+                                                <label for="" class="block">Email</label>
+                                                <input type="text" id="" placeholder="Email Address"
+                                                    class="contact_form_phone input_field !w-full  bg-transparent ring-1 ring-primary-hover"
+                                                    v-model="form.email">
+                                            </div>
                                         </div>
 
-                                        <div class="!w-full">
-                                            <label for="" class="block">Last Name</label>
-                                            <input type="email" id="" placeholder="Last Name"
-                                                class="contact_form_email input_field !w-full bg-transparent ring-1 ring-primary-hover"
-                                                v-model="form.last_name" required="required"
-                                                data-error="Email is required.">
-                                        </div>
-
-                                        <div class="!w-full">
-                                            <label for="" class="block">Email</label>
-                                            <input type="text" id="" placeholder="Email Address"
+                                        <div class="mb-3">
+                                            <label for="">Subject</label>
+                                            <input type="text" id=""
                                                 class="contact_form_phone input_field !w-full  bg-transparent ring-1 ring-primary-hover"
-                                                v-model="form.email">
+                                                v-model="form.subject" placeholder="subject" required>
                                         </div>
-                                    </div>
 
-                                    <div class="mb-3">
-                                        <label for="">Subject</label>
-                                        <input type="text" id=""
-                                            class="contact_form_phone input_field !w-full  bg-transparent ring-1 ring-primary-hover"
-                                            v-model="form.subject" placeholder="subject" required>
-                                    </div>
-
-                                    <div class="contact_form_text">
-                                        <label for="" class="block">Message</label>
-                                        <textarea id="contact_form_message"
-                                        class="text_field contact_form_message  bg-transparent ring-1 ring-primary-hover"
-                                        rows="4" placeholder="Message" required="required"
-                                        data-error="Please, write us a message." v-model="form.message">
+                                        <div class="contact_form_text">
+                                            <label for="" class="block">Message</label>
+                                            <textarea id="contact_form_message"
+                                                class="text_field contact_form_message  bg-transparent ring-1 ring-primary-hover"
+                                                rows="4" placeholder="Message" required="required"
+                                                data-error="Please, write us a message." v-model="form.message">
                                        </textarea>
-                                </div>
-                                <div class="contact_form_button">
-                                    <button type="submit" class="mt-2  group mb-3 ring-2 max-w-sm w-full rounded-lg py-2
+                                        </div>
+                                        <div class="contact_form_button">
+                                            <button type="submit" class="mt-2  group mb-3 ring-2 max-w-sm w-full rounded-lg py-2
                                     ring-green-700 hover:ring-green-500 hover:ring-4 disabled:ring-0" id="sbtn">
-                                        <i class="fas fa-spinner animate-spin !hidden group-disabled:!inline-block"></i>
-                                        send message
-                                    </button>
-                                </div>
-                            </form>
+                                                <i
+                                                    class="fas fa-spinner animate-spin !hidden group-disabled:!inline-block"></i>
+                                                send message
+                                            </button>
+                                        </div>
+                                    </form>
 
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div>
-                <iframe class="w-full h-[300px]"
-                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d827.4598337208187!2d-118.13431063789609!3d33.94526018865031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1699603623058!5m2!1sen!2sng"
-                  style="border:0;" allowfullscreen="" loading="lazy" 
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div>
+                        <iframe class="w-full h-[300px]"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d827.4598337208187!2d-118.13431063789609!3d33.94526018865031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1699603623058!5m2!1sen!2sng"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!--  xxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxxxxxxxxxxxxx-->
+
             </div>
         </div>
 
-        <!--  xxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxxxxxxxxxxxxx-->
-
-    </div>
-</div>
 
 
 
 
-
-    <!-- <section class="">
+        <!-- <section class="">
                     <div class="flex items-center justify-center py-8 mx-auto sm:py-0">
                         <div class="mt-[7%]  max-w-sm w-full px-3 overflow-x-hidden ">
                             <div class="bg-green-800/50 rounded-lg shadow text-center text-green-400
@@ -211,7 +217,7 @@ AOS.refreshHard()
                         </div>
                     </div>
                 </section> -->
-    <!-- </div>
+        <!-- </div>
         </div> -->
     </div>
 </template>

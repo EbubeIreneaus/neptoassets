@@ -66,7 +66,9 @@ const send_feedback = async (e) => {
                                             src="https://img.icons8.com/ultraviolet/24/000000/map-marker.png" alt=""></div>
                                     <div class="contact_info_content">
                                         <div class="contact_info_title">Address</div>
-                                        <div class="contact_info_text">4th St, Downey, CA 90241, UK</div>                                    </div>
+                                        <div class="contact_info_text">Beverly Blvd, Los Angeles, CA
+                                            90048, United States</div>
+                                    </div>
                                 </div>
 
                             </div>
@@ -125,27 +127,28 @@ const send_feedback = async (e) => {
                                             rows="4" placeholder="Message" required="required"
                                             data-error="Please, write us a message." v-model="form.message">
                                         </textarea>
-                                </div>
-                                <div class="contact_form_button">
-                                    <button type="submit" class="mt-2 px-14 py-3 group mb-3 ring-1 hover:ring-4" id="sbtn">
-                                        <i class="fas fa-spinner animate-spin !hidden group-disabled:!inline-block"></i>
-                                        send
-                                    </button>
-                                </div>
-                            </form>
+                                    </div>
+                                    <div class="contact_form_button">
+                                        <button type="submit" class="mt-2 px-14 py-3 group mb-3 ring-1 hover:ring-4"
+                                            id="sbtn">
+                                            <i class="fas fa-spinner animate-spin !hidden group-disabled:!inline-block"></i>
+                                            send
+                                        </button>
+                                    </div>
+                                </form>
 
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
+            <!--  xxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxxxxxxxxxxxxx-->
+
         </div>
-
-        <!--  xxxxxxxxxxxxxxxxxxxxxxxxxx  xxxxxxxxxxxxxxxx-->
-
     </div>
-</div>
-<!-- </div> -->
+    <!-- </div> -->
 
 
 
@@ -420,5 +423,6 @@ h6 {
         padding-right: 25px;
     }
 
-}</style>
+}
+</style>
 
