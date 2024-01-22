@@ -56,7 +56,7 @@ const send_feedback = async (e) => {
                                     </div>
                                     <div class="contact_info_content">
                                         <div class="contact_info_title">Email</div>
-                                        <div class="contact_info_text ">service@digitalassets.com.ng</div>
+                                        <div class="contact_info_text ">service@neptoasset.com.ng</div>
                                     </div>
                                 </div>
 

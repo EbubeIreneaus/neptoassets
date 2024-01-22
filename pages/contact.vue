@@ -69,7 +69,7 @@ AOS.refreshHard()
                                             src="https://img.icons8.com/office/24/000000/iphone.png" alt=""></div>
                                     <div class="contact_info_content">
                                         <div class="contact_info_title">Whatsapp</div>
-                                        <div class="contact_info_text">+44 753 474 1946</div>
+                                        <div class="contact_info_text">+1 (859) 638‑4766</div>
                                     </div>
                                 </div>
 
@@ -81,7 +81,7 @@ AOS.refreshHard()
                                     <div class="contact_info_content">
                                         <div class="contact_info_title text-orange-600">Email</div>
                                         <div class="contact_info_text ">
-                                        <a href="mailto:service@digitalassets.com.ng">service@digitalassets.com.ng</a></div>
+                                        <a href="mailto:service@digitalassets.com.ng">service@neptoasset.com.ng</a></div>
                                     </div>
                                 </div>
 
