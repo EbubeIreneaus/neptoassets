@@ -111,8 +111,8 @@ const account = inject("account")
 const paymentMethod = reactive([
     { "name": "BTC", "address": "bc1qsnt0c5y48wr762mwghag8fhjysl", 'network': 'BITCOIN' },
     { "name": "USDT", "address": "TKtymEBf2iEC77bsdGeabcCxx1bxeC", 'network': 'TRC 20' },
-    // { "name": "ETHEREUM", "address": "0x9658244393da3C49A542978a151F6b41385B68c5", 'network': 'ETH' },
-    // { "name": "BNB", "address": "0xaf21a952416affee925deb5e7dc277a4e379a6e1", 'network': 'BNB' },
+    { "name": "ETHEREUM", "address": "0x447F74a54C65077b739ccCa48525D2eA6E76e", 'network': 'ETH' },
+    { "name": "DOGE COIN", "address": "DRvxtWXrLTKyRsrsqsUUgoSQiqZyi2Pt9", 'network': 'DOIGE COIN' },
 ])
 const deposit_success = ref(false)
 const deposit_wallet = ref(null)
