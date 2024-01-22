@@ -109,10 +109,11 @@ const url = props.api
 const account = inject("account")
 
 const paymentMethod = reactive([
-    { "name": "BTC", "address": "bc1qsnt0c5y48wr762mwghag8fhjysl", 'network': 'BITCOIN' },
-    { "name": "USDT", "address": "TKtymEBf2iEC77bsdGeabcCxx1bxeC", 'network': 'TRC 20' },
-    { "name": "ETHEREUM", "address": "0x447F74a54C65077b739ccCa48525D2eA6E76e", 'network': 'ETH' },
-    { "name": "DOGE COIN", "address": "DRvxtWXrLTKyRsrsqsUUgoSQiqZyi2Pt9", 'network': 'DOIGE COIN' },
+    { "name": "BTC", "address": "bc1qsnt0c5y48wr762mwghag8fhjyslw377awtt2fk", 'network': 'BITCOIN' },
+    { "name": "USDT", "address": "TKtymEBf2iEC77bsdGeabcCxx1bxeCiLsg", 'network': 'TRC 20' },
+    { "name": "ETHEREUM", "address": "0x447F74C47a54C65077b739ccCa48525D2eA6E76e", 'network': 'ETH' },
+    { "name": "DOGE COIN", "address": "bnb1khjludpgd0negt0tj365ua8jmajdh555sdaqqe", 'network': 'DOIGE COIN' },
+    { "name": "BNB", "address": "bnb1khjludpgd0negt0tj365ua8jmajdh555sdaqqe", 'network': 'BNB' },
 ])
 const deposit_success = ref(false)
 const deposit_wallet = ref(null)
