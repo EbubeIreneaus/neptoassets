@@ -1,18 +1,25 @@
 <template>
   <div>
     <NuxtLayout :api="api">
-    <NuxtLoadingIndicator />
-    <NuxtPage :api="api" />
+      <NuxtLoadingIndicator />
+      <NuxtPage :api="api" />
     </NuxtLayout>
   </div>
 </template>
 
 <script setup>
 useHead({
-    script: [
-      {
-        type: 'text/javascript',
-        innerHTML: `
+  link: [
+    {
+      rel: 'preload',
+      href: 'https://cdn.shareaholic.net/assets/pub/shareaholic.js',
+      as: 'script',
+    },
+  ],
+  script: [
+    {
+      type: 'text/javascript',
+      innerHTML: `
           var _smartsupp = _smartsupp || {};
           _smartsupp.key = 'cbe1609dff1a29261dbbe11ca5161cf9182da735';
           window.smartsupp||(function(d) {
@@ -22,13 +29,24 @@ useHead({
             c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
           })(document);
         `,
-      },
-    ],
-    noscript: [
-      {
-        innerHTML: 'Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a>',
-      },
-    ],
+    },
+    {
+      type: 'text/javascript',
+      src: 'https://cdn.shareaholic.net/assets/pub/shareaholic.js',
+      async: true,
+    },
+  ],
+  meta: [
+    {
+      name: 'shareaholic:site_id',
+      content: '2a8a59ebb34e71168adaf4902b2e4180',
+    },
+  ],
+  noscript: [
+    {
+      innerHTML: 'Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a>',
+    },
+  ],
 })
 const api = "https://nepto-api.vercel.app/"
 // const api = "http://127.0.0.1:8000/"
