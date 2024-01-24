@@ -4,12 +4,12 @@ definePageMeta({
 });
 const props = defineProps(['api'])
 const plans = ref({
-    'standard': { 'plan': 'standard', 'min': 100, 'max': 2000, 'duration': '5 days', 'roi': 3.5, 'bonus': 0 },
-    'silver': { 'plan': 'silver', 'min': 2001, 'max': 20000, 'duration': '1 weeks', 'roi': 6.6, 'bonus': 0 },
-    'premium': { 'plan': 'premium', 'min': 20001, 'max': 100000, 'duration': '1 months', 'roi': 10, 'bonus': 0 },
-    'ultra': { 'plan': 'ultra', 'min': 100001, 'max': 1000000, 'duration': '3 months', 'roi': 12, 'bonus': 0 },
-    'promo': { 'plan': 'promo', 'min': 1000, 'max': 100000, 'duration': '1 months', 'roi': 5.5, 'bonus': 0 },
-    'visa': { 'plan': 'visa', 'min': 2000, 'max': 1000000, 'duration': '2 weeks', 'roi': 8.5, 'bonus': 20 },
+    'standard': { 'plan': 'standard', 'min': 100, 'max': 2000, 'duration': '40 days', 'roi': 15.5, 'bonus': 0 },
+    'silver': { 'plan': 'silver', 'min': 2001, 'max': 20000, 'duration': '80 days', 'roi': 22.0, 'bonus': 0 },
+    'premium': { 'plan': 'premium', 'min': 20001, 'max': 100000, 'duration': '120 days', 'roi': 28.5, 'bonus': 0 },
+    'ultra': { 'plan': 'ultra', 'min': 100001, 'max': 1000000, 'duration': '160 days', 'roi': 35.0, 'bonus': 0 },
+    'promo': { 'plan': 'promo', 'min': 1000, 'max': 100000, 'duration': '200 days', 'roi': 41.5, 'bonus': 0 },
+    'visa': { 'plan': 'visa', 'min': 2000, 'max': 1000000, 'duration': '240', 'roi': 47.0, 'bonus': 20 },
 })
 const account = inject('account')
 const url = props.api

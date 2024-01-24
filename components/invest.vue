@@ -50,8 +50,8 @@
                     <ul role="list" class="text-center">
                         <li class="py-1">Minimum: $100</li>
                         <li class="py-2">Maximum: $2000</li>
-                        <li class="py-1">Minimum ROI: 3.5% daily</li>
-                        <li class="py-2">Duration: 5days</li>
+                        <li class="py-1">Minimum ROI: 15.5% daily</li>
+                        <li class="py-2">Duration: 30 days</li>
                         <li class="py-1">Referral Commision: 10%</li>
 
                        <div class="mt-14"> <link-btn-fa link="/auth/register">Get Started</link-btn-fa></div>
@@ -67,8 +67,8 @@
                     <ul role="list" class="text-center">
                         <li class="py-1">Minimum: $2,001</li>
                         <li class="py-2">Maximum: $20,000</li>
-                        <li class="py-1">Minimum ROI: 6.6% daily</li>
-                        <li class="py-2">Duration: 7days</li>
+                        <li class="py-1">Minimum ROI: 22.0% daily</li>
+                        <li class="py-2">Duration: 80 days</li>
                         <li class="py-1">Referral Commision: 10%</li>
 
                        <div class="mt-14"> <link-btn-fa   link="/auth/register" >Get Started</link-btn-fa></div>
@@ -98,8 +98,8 @@
                     <ul role="list" class="text-center">
                         <li class="py-1">Minimum: $20,001</li>
                         <li class="py-2">Maximum: $100,000</li>
-                        <li class="py-1">Minimum ROI: 10% daily</li>
-                        <li class="py-2">Duration: 30days</li>
+                        <li class="py-1">Minimum ROI: 28.5% daily</li>
+                        <li class="py-2">Duration: 120 days</li>
                         <li class="py-1">Referral Commision: 10%</li>
 
 
@@ -117,8 +117,8 @@
                     <ul role="list" class="text-center">
                         <li class="py-1">Minimum: $100,001</li>
                         <!-- <li class="py-2">Maximum: $20,000</li> -->
-                        <li class="py-1">Minimum ROI: 12% daily</li>
-                        <li class="py-2">Duration: 90days</li>
+                        <li class="py-1">Minimum ROI: 35.0% daily</li>
+                        <li class="py-2">Duration: 160 days</li>
                         <li class="py-1">Referral Commision: 10%</li>
 
 
@@ -133,8 +133,8 @@
                     <ul role="list" class="text-center">
                         <li class="py-1">Minimum: $100,000</li>
                         <li class="py-2">Maximum: </li>
-                        <li class="py-1">Minimum ROI: 10% daily</li>
-                        <li class="py-2">Duration: 14days</li>
+                        <li class="py-1">Minimum ROI: 41.5% daily</li>
+                        <li class="py-2">Duration: 200 days</li>
                         <li class="py-1">Referral Commision: 10%</li>
 
 
