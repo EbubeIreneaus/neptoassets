@@ -42,7 +42,7 @@ const confirmUser = async (e) => {
         key: new Date().getTime().toString(),
         watch: false,
     })
-    if (res.value.status == 'success') {
+    if (res.value.status == 'success' || res.value.status == "unverified") {
         e.target.reset()
         useRouter().push('/user/withdraw/xxvwy/')
         return
