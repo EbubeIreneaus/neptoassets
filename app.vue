@@ -5,7 +5,7 @@
       <NuxtPage :api="api" />
     </NuxtLayout>
 
-    <div>
+    <!-- <div>
       <a
         href="https://wa.me/+18596384766/?text=Good%20Day%20Nepto%20Assets%20%20my%20name%20is%20"
         target="_blank"
@@ -17,7 +17,7 @@
           !delay-1000 bg-green-600 border-0"
         />
       </a>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -46,6 +46,10 @@ useHead({
     // },
     {
       type: "text/javascript",
+      src: "//code.tidio.co/ywgwkd27xxwdawhnpmz3nl2gxdtns1rx.js"
+    },
+    {
+      type: "text/javascript",
       src: "https://cdn.shareaholic.net/assets/pub/shareaholic.js",
       async: true,
     },
@@ -56,11 +60,11 @@ useHead({
       content: "2a8a59ebb34e71168adaf4902b2e4180",
     },
   ],
-  // noscript: [
-  //   {
-  //     innerHTML: 'Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a>',
-  //   },
-  // ],
+  noscript: [
+    {
+      innerHTML: 'Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a>',
+    },
+  ],
 });
 const api = "https://nepto-api.vercel.app/";
 // const api = "http://127.0.0.1:8000/"
