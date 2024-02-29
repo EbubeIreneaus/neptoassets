@@ -19,7 +19,7 @@
             <div class="text-black/60 mb-7">
                 <label class="font-semibold px-1">Network</label>
                 <select v-model="net_work" class="block outline-none py-3 border px-5 w-full mt-3">
-                    <option v-for="network in networkList[channel]" :value="network">{{ network }}</option>
+                    <option v-for="(network, index) in networkList[channel]" :value="network" :key="index">{{ network }}</option>
                 </select>
             </div>
             <div class="text-black/60 mb-7">
@@ -117,7 +117,7 @@ const initiate = async (e) => {
 
     if (res.value) {
         if (res.value.status == "success") {
-            alert("Withdrawl initiated successfully!!");
+            alert("Withdrawal initiated successfully!!");
             useRouter().push('/user/')
         } else {
             alert("could not initiate this transaction, Error details \n" + res.value.code);
