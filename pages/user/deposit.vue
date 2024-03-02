@@ -21,7 +21,7 @@
                     <div class="grid md:grid-cols-2 gap-y-7 gap-x-3">
                         <label class="flex items-center border border-black justify-between h-24 px-5 max-w-sm "
                             :class="{ 'border-2 border-slate-950  rounded-lg': deposit.channel == x.name }"
-                            v-for="x in paymentMethod">
+                            v-for="x in paymentMethod" :key="x.name">
                             <input type="radio" class="hidden peer" :value="x.name" v-model="deposit.channel">
                             <p class="font-semibold">{{ x.name }}</p>
                             <i
@@ -66,8 +66,8 @@
                         <div class="mb-5">
                             <label for="">{{ depo_modal.channel }} Address</label>
                             <div class="flex items-center border my-2">
-                                <input type="text" v-model="depo_modal.wallet_address" id="address_field" readonly
-                                    class="block w-full py-2 border-0 outline-0 px-2">
+                                <textarea type="text" v-model="depo_modal.wallet_address" id="address_field" readonly
+                                    class="block w-full py-2 border-0 outline-0 px-2" rows="3"></textarea>
                                 <button class="px-4 border py-2 bg-slate-100" @click="copy_to_clipboard()"><i
                                         class="fa fa-copy"></i></button>
                             </div>
@@ -108,13 +108,13 @@ const props = defineProps(['api'])
 const url = props.api
 const account = inject("account")
 
-const paymentMethod = reactive([
+const paymentMethod = [
     { "name": "BTC", "address": "bc1qsnt0c5y48wr762mwghag8fhjyslw377awtt2fk", 'network': 'BITCOIN' },
     { "name": "USDT", "address": "TKtymEBf2iEC77bsdGeabcCxx1bxeCiLsg", 'network': 'TRC 20' },
     { "name": "ETHEREUM", "address": "0x447F74C47a54C65077b739ccCa48525D2eA6E76e", 'network': 'ETH' },
     { "name": "DOGE COIN", "address": "DRdvxtWXrLTKyRsrsqsUUgoSQiqZyi2Pt9", 'network': 'DOIGE COIN' },
     { "name": "BNB", "address": "bnb1khjludpgd0negt0tj365ua8jmajdh555sdaqqe", 'network': 'BNB' },
-])
+]
 const deposit_success = ref(false)
 const deposit_wallet = ref(null)
 const deposit_channel = ref('')
