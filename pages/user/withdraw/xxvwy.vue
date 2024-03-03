@@ -3,10 +3,10 @@ definePageMeta({
     layout: "db",
 });
 const payMethod = [
-    {name:'usdt', min: 10, max: 50000, duration: 48},
-    {name:'ethereum', min: 10, max: 50000, duration: 48},
-    {name:'bitcoin', min: 10, max: 50000, duration: 48},
-    // {name:'litcoin', min: 10, max: 50000, duration: 48},
+    {name:'usdt', min: 20, max: 850000, duration: 5},
+    {name:'ethereum', min: 20, max: 850000, duration: 5},
+    {name:'bitcoin', min: 20, max: 850000, duration: 5},
+    {name:'doigecoin', min: 20, max: 850000, duration: 5},
 ]
 const withdrawal_charges = ref(0)
 const account = inject("account");
@@ -37,7 +37,7 @@ if(res.value.charges){
         <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-x-5 gap-y-10 py-14">
             <div 
             class="border w-full bg-slate-900 text-white relative min-h-[250px] px-7 transition-all duration-200 hover:scale-110"
-             v-for="coin in payMethod">
+             v-for="coin in payMethod" :key="coin.name">
                 <div class="absolute bg-transparent top-0 left-0 flex justify-center w-full">
                     <p class="bg-white text-black w-fit py-1 px-10 font-semibold rounded-b-lg">{{ coin.name.toUpperCase() }}</p>
                 </div>
@@ -48,21 +48,21 @@ if(res.value.charges){
                 <div class="text-center">
                     <div class="mb-5">
                         <small>Minimum withdrawable amount</small><br>
-                        <h2 class="font-bold text-xl font-mono"><i class="fa fa-dollar-sign"></i>10</h2>
+                        <h2 class="font-bold text-xl font-mono"><i class="fa fa-dollar-sign"></i>20.00</h2>
                     </div>
                     <div class="mb-7">
                         <small>Maximum withdrawable amount</small><br>
-                        <h2 class="font-bold text-xl font-mono"><i class="fa fa-dollar-sign"></i>50,000</h2>
+                        <h2 class="font-bold text-xl font-mono"><i class="fa fa-dollar-sign"></i>850,000</h2>
                     </div>
                     <div class="mb-7">
                         <h2 class=" text-lg font-sans">Charge Type: <span class="font-semibold">Percentage</span></h2>
                     </div>
                     <div class="mb-7">
-                        <h2 class=" text-lg font-sans">Charge Amount: <span class="font-semibold">{{withdrawal_charges}}%</span></h2>
+                        <h2 class=" text-lg font-sans">Charge Amount: <span class="font-semibold">No fee applicable</span></h2>
                     </div>
                     <div class="mb-7">
                         <h2 class=" text-lg font-sans">Duration: 
-                        <span class="font-semibold"> within 48 hours of request</span></h2>
+                        <span class="font-semibold"> within 5 minuites of request</span></h2>
                     </div>
                 </div>
                 <div class="flex justify-center">
