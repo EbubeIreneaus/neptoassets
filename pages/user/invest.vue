@@ -4,12 +4,12 @@ definePageMeta({
 });
 const props = defineProps(['api'])
 const plans = ref({
-    'standard': { 'plan': 'standard', 'min': 100, 'max': 2000, 'duration': '40 days', 'roi': 15.5, 'bonus': 0 },
-    'silver': { 'plan': 'silver', 'min': 2001, 'max': 20000, 'duration': '80 days', 'roi': 22.0, 'bonus': 0 },
-    'premium': { 'plan': 'premium', 'min': 20001, 'max': 100000, 'duration': '120 days', 'roi': 28.5, 'bonus': 0 },
-    'ultra': { 'plan': 'ultra', 'min': 100001, 'max': 1000000, 'duration': '160 days', 'roi': 35.0, 'bonus': 0 },
-    'promo': { 'plan': 'promo', 'min': 1000, 'max': 100000, 'duration': '200 days', 'roi': 41.5, 'bonus': 0 },
-    'visa': { 'plan': 'visa', 'min': 2000, 'max': 1000000, 'duration': '240', 'roi': 47.0, 'bonus': 20 },
+    'standard': { 'plan': 'standard', 'min': 100, 'max': 2000, 'duration': '40 days', 'roi': 15.5, 'bonus': 25 },
+    'silver': { 'plan': 'silver', 'min': 2001, 'max': 20000, 'duration': '80 days', 'roi': 22.0, 'bonus': 105 },
+    'premium': { 'plan': 'premium', 'min': 20001, 'max': 100000, 'duration': '120 days', 'roi': 28.5, 'bonus': 480 },
+    'ultra': { 'plan': 'ultra', 'min': 100001, 'max': 1000000, 'duration': '160 days', 'roi': 35.0, 'bonus': 1550 },
+    'promo': { 'plan': 'promo', 'min': 1000, 'max': 100000, 'duration': '200 days', 'roi': 41.5, 'bonus': 95 },
+    'visa': { 'plan': 'visa', 'min': 2000, 'max': 1000000, 'duration': '240', 'roi': 47.0, 'bonus': 186 },
 })
 const account = inject('account')
 const url = props.api
@@ -142,10 +142,10 @@ const initiate = async (e) => {
                             <small>Name of Plan</small><br>
                             <small class="capitalize text-black/80">{{ invest.plan }} plan</small>
                         </div>
-                        <div class="">
+                        <!-- <div class="">
                             <small>Plan Price</small><br>
                             <small class="capitalize text-black/80">{{ format_amount(2000) }}</small>
-                        </div>
+                        </div> -->
                         <div class="">
                             <small>Duration</small><br>
                             <small class="capitalize text-black/80">{{ plans[invest.plan].duration }}</small>
