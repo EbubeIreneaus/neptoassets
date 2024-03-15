@@ -12,7 +12,7 @@
             <h2 class="mt-7 text-lg font-bold font-serif">You were referred by</h2> <br>
             <div>
                 <i class="fa fa-user text-4xl"></i>
-                <p class=" block" v-if="account.profile.referred_by.user">{{account.profile.referred_by?.user.first_name}} {{account.profile.referred_by?.user.last_name}}</p>
+                <p class=" block" v-if="account.profile.referred_by?.user">{{account.profile.referred_by?.user.first_name}} {{account.profile.referred_by?.user.last_name}}</p>
                 <p class=" block" v-else>Null</p>
             </div>
         </div>
@@ -54,7 +54,6 @@
 
 <script setup>
 import Axios from 'axios'
-const url = inject('url')
 definePageMeta({
     layout: "db",
 });
@@ -66,10 +65,11 @@ const referral_id = `https://neptoasset.com/auth/register/${account.value.profil
 const referrals = ref([])
 const null_referrals = ref(false)
 const copied_success = ref(false)
+const props = defineProps(['api'])
+const url = props.api
 
-
-const get_referrals = async () => {
-    const res = await Axios.get(`${url}/account/get_referrals/`, {
+const get_referrals = async () => { 
+    const res = await Axios.get(`${url}account/get_referrals/`, {
         params: {
             'profile-id': account.value.profile.id
         }
