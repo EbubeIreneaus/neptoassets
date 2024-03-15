@@ -12,7 +12,8 @@
             <h2 class="mt-7 text-lg font-bold font-serif">You were referred by</h2> <br>
             <div>
                 <i class="fa fa-user text-4xl"></i>
-                <p class=" block">{{ account.profile.referred_by?.user?.username ?? "Null" }}</p>
+                <p class=" block" v-if="account.profile.referred_by.user">{{account.profile.referred_by?.user.first_name}} {{account.profile.referred_by?.user.last_name}}</p>
+                <p class=" block" v-else>Null</p>
             </div>
         </div>
 
@@ -30,7 +31,7 @@
                         </tr>
                     </thead>
                     <tbody v-if="referrals.length>0">
-                        <tr v-for="x in referrals">
+                        <tr v-for="x in referrals" :key="x.username">
                             <td class=" px-4 py-2">{{ x.user.first_name }}</td>
                             <td class=" px-4 py-2">{{ x.user.last_name }}</td>
                             <td class=" px-4 py-2">{{x.verified?'verified':'unverified'}}</td>
@@ -61,7 +62,7 @@ useHead({
     title: 'my Referrals'
 })
 const account = inject('account')
-const referral_id = `https://dg-assets.com/auth/register/${account.value.profile.user.username}`
+const referral_id = `https://neptoasset.com/auth/register/${account.value.profile.user.username}`
 const referrals = ref([])
 const null_referrals = ref(false)
 const copied_success = ref(false)
