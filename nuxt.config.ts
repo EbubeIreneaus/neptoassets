@@ -42,6 +42,7 @@ export default defineNuxtConfig({
       script: [
         { src: "https://s3.tradingview.com/tv.js", tagPosition: 'head' },
         { src: 'https://unpkg.com/aos@2.3.1/dist/aos.js', tagPosition: 'bodyClose' },
+        {src: '//code.jivosite.com/widget/ZAIKUTYFjy', async: true},
         {
           src: "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit",
           tagPosition: 'bodyClose',
