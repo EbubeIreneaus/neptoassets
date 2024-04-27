@@ -46,7 +46,9 @@ useHead({
     // },
     {
       type: "text/javascript",
-      src: "//code.tidio.co/ywgwkd27xxwdawhnpmz3nl2gxdtns1rx.js"
+      src: '//code.jivosite.com/widget/cCKKEPyUIh',
+      async: true,
+      tagPosition: 'head'
     },
     {
       type: "text/javascript",
