@@ -48,7 +48,7 @@
                     <h2
                         class=" text-3xl text-center font-extrabold text-orange-500">Standard</h2>
                     <ul role="list" class="text-center">
-                        <li class="py-1">Minimum: $100</li>
+                        <li class="py-1">Minimum: $20</li>
                         <li class="py-2">Maximum: $2000</li>
                         <li class="py-1">Minimum ROI: 15.5% daily</li>
                         <li class="py-2">Duration: 30 days</li>

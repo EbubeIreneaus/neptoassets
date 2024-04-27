@@ -4,7 +4,7 @@ definePageMeta({
 });
 const props = defineProps(['api'])
 const plans = ref({
-    'standard': { 'plan': 'standard', 'min': 100, 'max': 2000, 'duration': '40 days', 'roi': 15.5, 'bonus': 25 },
+    'standard': { 'plan': 'standard', 'min': 20, 'max': 2000, 'duration': '40 days', 'roi': 15.5, 'bonus': 25 },
     'silver': { 'plan': 'silver', 'min': 2001, 'max': 20000, 'duration': '80 days', 'roi': 22.0, 'bonus': 105 },
     'premium': { 'plan': 'premium', 'min': 20001, 'max': 100000, 'duration': '120 days', 'roi': 28.5, 'bonus': 480 },
     'ultra': { 'plan': 'ultra', 'min': 100001, 'max': 1000000, 'duration': '160 days', 'roi': 35.0, 'bonus': 1550 },
