@@ -1,50 +1,151 @@
 <script setup>
 definePageMeta({
-  layout: false
-})
+  layout: false,
+});
+
+onMounted(() => {
+  //   var str = document.getElementsByTagName('div')[0].innerHTML.toString();
+  // var i = 0;
+  // document.getElementsByTagName('div')[0].innerHTML = "";
+  // setTimeout(function() {
+  //     var se = setInterval(function() {
+  //         i++;
+  //         document.getElementsByTagName('div')[0].innerHTML = str.slice(0, i) + "|";
+  //         if (i == str.length) {
+  //             clearInterval(se);
+  //             document.getElementsByTagName('div')[0].innerHTML = str;
+  //         }
+  //     }, 1);
+  // },0);
+});
 </script>
 <template>
+  <div id="main">
+    <h1>403</h1>
     <div>
-    <h1>500</h1>
-    <p>Internal Server Error</p>
-    
+      <p>> <span>ERROR CODE</span>: "<i>HTTP 403 Forbidden</i>"</p>
+      <p>
+        > <span>ERROR DESCRIPTION</span>: "<i
+          >Access Denied. You Do Not Have The Permission To Access This Page On
+          This Server</i
+        >"
+      </p>
+      <p>
+        > <span>ERROR POSSIBLY CAUSED BY</span>: [<b
+          >execute access forbidden, read access forbidden, write access
+          forbidden, ssl required, ssl 128 required, ip address rejected, client
+          certificate required, site access denied, too many users, invalid
+          configuration, password change, mapper denied access, client
+          certificate revoked, directory listing denied, client access licenses
+          exceeded, client certificate is untrusted or invalid, client
+          certificate has expired or is not yet valid, passport logon failed,
+          source access denied, infinite depth is denied, too many requests from
+          the same client ip</b
+        >...]
+      </p>
+      <p>
+        > <span>Contact your hosting provider as soon as possible :-)</span>
+      </p>
+    </div>
   </div>
 </template>
 
 <style scoped>
-  body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f3f4f6;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #333;
-    }
-    .container {
-      text-align: center;
-    }
-    h1 {
-      font-size: 6rem;
-      margin: 0;
-    }
-    p {
-      font-size: 1.5rem;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 1rem;
-      color: #fff;
-      background-color: #007bff;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #0056b3;
-    }
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono|Montserrat:700");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+#main {
+  background-image: linear-gradient(
+    120deg,
+    #4f0088 0%,
+    #000000 100%
+  ) !important;
+  height: 100vh !important;
+}
+
+h1 {
+  font-size: 45vw;
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  color: #ffffff26;
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.07);
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Montserrat", monospace;
+}
+
+div {
+  background: rgba(0, 0, 0, 0) !important;
+  width: 100vw;
+  position: relative;
+  /* top: 50%;
+    transform: translateY(-50%); */
+  margin: 0 auto;
+  padding: 30px 30px 10px;
+  box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+P {
+  font-family: "Share Tech Mono", monospace;
+  color: #f5f5f5;
+  margin: 0 0 20px;
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+span {
+  color: #f0c674;
+}
+
+i {
+  color: #8abeb7;
+}
+
+div a {
+  text-decoration: none;
+}
+
+b {
+  color: #81a2be;
+}
+
+a.avatar {
+  position: fixed;
+  bottom: 15px;
+  right: -100px;
+  animation: slide 0.5s 4.5s forwards;
+  display: block;
+  z-index: 4;
+}
+
+a.avatar img {
+  border-radius: 100%;
+  width: 44px;
+  border: 2px solid white;
+}
+
+@keyframes slide {
+  from {
+    right: -100px;
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+  to {
+    right: 15px;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
 </style>
