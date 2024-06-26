@@ -1,7 +1,6 @@
 <script setup>
 import Cookies from 'js-cookie'
 import Axios from 'axios'
-
 useHead({
     script: [
         // {
